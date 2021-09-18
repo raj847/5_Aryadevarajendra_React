@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+body {
+  background-image: url("../../img/bg-img.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section .Project {
+  font-family: "Roboto", sans-serif;
+}
+
+.Navb-logo {
+  margin-left: 15px;
+}
+
+.Navb-item {
+  margin-left: 15px;
+}
+
+.Content {
+  color: #19345e;
+}
+
+.Orange {
+  border-radius: 20px;
+  background-color: #f47522;
+  padding: 6px 11px;
+  margin: 0;
+  border: 1px;
+}
+
+button:hover {
+  background-color: #e4640f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.Kanan {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 850px) {
+  .Navb-logo {
+    margin-left: 30px;
+  }
+
+  .Navb-item {
+    margin-left: 30px;
+  }
+
+  .Content {
+    text-align: left;
+  }
+
+  .Nama {
+    text-align: left;
+    font-size: 85px;
+    font-weight: 700;
+  }
+
+  .Kanan {
+    margin-left: 5em;
+  }
+
+  .Keterangan {
+    text-align: left;
+    font-weight: 500;
+    font-size: 35px;
+  }
+
+  .Teks-1 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 35px;
+  }
+}
