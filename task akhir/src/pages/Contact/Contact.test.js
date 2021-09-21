@@ -8,7 +8,7 @@ describe('ContactPage', () => {
     render(<Contact />);
     expect(screen.getByText(/Contact us/)).toBeInTheDocument();
     expect(screen.getByLabelText(/Full Name/)).toBeInTheDocument();
-    expect(screen.getByLabelText(/Email Adress/)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Email Address/)).toBeInTheDocument();
     expect(screen.getByLabelText(/Phone Number/)).toBeInTheDocument();
   });
   test('input text for name ,email,and phone number with false value', () => {
@@ -27,7 +27,7 @@ describe('ContactPage', () => {
     expect(screen.getByText('Email Format Wrong')).toBeInTheDocument();
     expect(screen.getByText('Phone Number Format Wrong')).toBeInTheDocument();
     expect(screen.getByLabelText(/Full Name/)).toHaveValue('Ary4');
-    expect(screen.getByLabelText(/Email Adress/)).toHaveValue('Aryaaaa');
+    expect(screen.getByLabelText(/Email Address/)).toHaveValue('Aryaaaa');
     expect(screen.getByLabelText(/Phone Number/)).toHaveValue(parseInt('012131'));
   });
 
@@ -48,7 +48,7 @@ describe('ContactPage', () => {
     expect(screen.queryByText('Email Format Wrong')).not.toBeInTheDocument();
     expect(screen.queryByText('Phone Number Format Wrong')).not.toBeInTheDocument();
     expect(screen.getByLabelText(/Full Name/)).toHaveValue('Arya');
-    expect(screen.getByLabelText(/Email Adress/)).toHaveValue('arya@gmail.com');
+    expect(screen.getByLabelText(/Email Address/)).toHaveValue('arya@gmail.com');
     expect(screen.getByLabelText(/Phone Number/)).toHaveValue(parseInt('082222222222'));
   });
 });

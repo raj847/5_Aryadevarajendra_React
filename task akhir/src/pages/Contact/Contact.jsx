@@ -137,7 +137,7 @@ const Contact = () => {
                                     <p>{errorMassage.name}</p>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="email" className="form-label fs-4">Email Adress</label>
+                                    <label htmlFor="email" className="form-label fs-4">Email Address</label>
                                     <input
                                     name="email"
                                         type="email"
