@@ -1,14 +1,13 @@
 import "./Home.css"
-const ListItem = (props) => {
+const ListItem = ({umur,title,jenis_kelamin,id}) => {
 
-    const { id, nama, umur, jenis_kelamin } = props.data
 
     return (
-        <tr>
-            <td>{nama}</td>
+        <tr data-key={id}>
+            <td>{title}</td>
             <td>{umur}</td>
             <td>{jenis_kelamin}</td>
-            <td className="removeBorder" onClick={() => props.hapusPengunjung(id)}><button>Hapus</button></td>
+            {/* <td className="removeBorder" onClick={() => props.hapusPengunjung(id)}><button>Hapus</button></td> */}
         </tr>
     )
 }
